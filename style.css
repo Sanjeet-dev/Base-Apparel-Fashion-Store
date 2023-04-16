@@ -80,3 +80,35 @@ body{
     line-height: 1.5;
     width: 24rem;
 }
+.email-control{
+    position:relative;
+}
+.email-control > #mail{
+    height:3rem;
+    width:19rem;
+    border-radius:50px 0 0 50px;
+    padding-left: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-size: 12px;
+    border:0.7px solid var(--Desaturated-Red);
+}
+
+ .email-control input[type="submit"]{
+    height: 3rem;
+    width: 5rem;
+    border-radius: 25px;
+    margin-left: -2rem; 
+    background-color: var(--Desaturated-Red);
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    box-shadow: 0 8px 30px 3px var(--Soft-Red);
+
+
+} 
+.email-control img{
+    position:absolute;
+    top:16px;
+    height:1rem;
+    width:1rem;
+}
