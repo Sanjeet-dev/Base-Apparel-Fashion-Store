@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
   <div class="container">
     <section class="message">
 
-  We're coming soon
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" class="logo">
+      </div>
 
- <p> Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.</p>
-<div class="email">
- <input type="email" placeholder="Email Address">
- <input type="submit" name="submit" id="submit">
- <img src="./images/icon-error.svg" id="error-icon">
-</div>
+      <div class="soon">We're coming soon</div>
+      <div class="para">
+        <p> Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      </div>
+      <form>
+        <div class="email">
+          <input type="email" placeholder="Email Address" autocomplete="off">
+          <input type="submit" name="submit" id="submit">
+          <img src="./images/icon-error.svg" id="error-icon">
+          <p class="error-msg">error msg</p>
+        </div>
+      </form>
     </section>
     <section class="image">
+      <img src="./images/hero-desktop.jpg" alt="">
 
     </section>
-
-    <script src="./script.js"></script>
-  
   </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>
