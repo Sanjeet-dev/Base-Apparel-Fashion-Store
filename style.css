@@ -28,8 +28,10 @@ body{
     align-items:center;
     min-width:375px;
     font-family: 'Josefin Sans', sans-serif;
-
+    background-color: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)),
+    linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
 }
+
 .container{
     height:25rem;
     width:50rem;
@@ -37,19 +39,44 @@ body{
     justify-content:space-around;
     align-items:center;
     font-family:'Josefin Sans';
-    background-color: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)),
-    linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
 }
 .message{
     height:25rem;
     width:30rem;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
 }
 .image > img{
     height:25rem;
-    width:16rem;
+    width:20rem;
 
+}
+/* implementing gap between logo and "coming soon" */
+.gap{
+    display:flex;
+    flex-direction:column;
+    gap:4rem;
+}
+/* we're coming soon decoration */
+.soon{
+    font-size: xx-large;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.soon > h1 > span{
+    color: var(--Desaturated-Red);
+}
+.soon > h1 {
+    color: var(--Dark-Grayish-Red);
+}
+
+/* paragraph desing */
+
+.para{
+    color: var(--Desaturated-Red);
+    font-size: 13px;
+    font-family: 'Josefin Sans';
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    width: 24rem;
 }
