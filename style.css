@@ -11,8 +11,8 @@
 
 /* ### Gradients */
 
-/* --Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
---Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
+--gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+--gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
 }
 *{
@@ -28,8 +28,8 @@ body{
     align-items:center;
     min-width:375px;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)),
-    linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+    background: url("images/bg-pattern-desktop.svg"),
+    var(--gradient1);
 }
 
 .container{
@@ -43,10 +43,12 @@ body{
 .message{
     height:25rem;
     width:30rem;
+
 }
 .image > img{
     height:25rem;
     width:20rem;
+    background-size:cover;
 
 }
 /* implementing gap between logo and "coming soon" */
@@ -94,7 +96,7 @@ body{
     border-radius:50px 0 0 50px;
     padding-left: 1.5rem;
     font-family: 'Josefin Sans';
-    font-size: 12px;
+    font-size: 16px;
     border:0.7px solid var(--Desaturated-Red);
 }
 
@@ -103,22 +105,29 @@ body{
     width: 5rem;
     border-radius: 25px;
     margin-left: -2rem; 
-    background-color: var(--Desaturated-Red);
+    background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-repeat:no-repeat;
     border: none;
     cursor: pointer;
     position:absolute;
     right: 0;
     left: 18.5rem;
     top: 1rem;
-    box-shadow: 0 8px 30px 3px var(--Soft-Red);
+    box-shadow: 0 8px 30px 1px var(--Soft-Red);
 } 
+.form > .submit > input[type="submit"]:hover{
+    border-radius:20px;
+    height:3rem;
+    width:5.3rem;
+    background:hsl(0, 80%, 86%);
+}
 .form > .form-control > input:focus{
     outline-color: none;
     border: 1px solid var(--Desaturated-Red);
     color:var(--Soft-Red);
-    font-size:15px;
-    font-weight:300;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size:20px;
+    font-weight:400;
+    font-family: 'Josefin Sans';
 }
 .form >.submit > .arrow{
     position:absolute;
