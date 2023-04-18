@@ -1,78 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
 :root {
-/* ### Primary */
+    /* ### Primary */
 
---Desaturated-Red: hsl(0, 36%, 70%);
---Soft-Red: hsl(0, 93%, 68%);
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
 
-/* ### Neutral */
+    /* ### Neutral */
 
---Dark-Grayish-Red: hsl(0, 6%, 24%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
 
-/* ### Gradients */
+    /* ### Gradients */
 
---gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
---gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
 }
-*{
-    margin:0px;
-    padding:0px;
+
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-body{
-    height:100vh;
-    width:100wh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-width:375px;
+body {
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 375px;
     font-family: 'Josefin Sans', sans-serif;
     background: url("images/bg-pattern-desktop.svg"),
-    var(--gradient1);
+        var(--gradient1);
 }
 
-.container{
-    height:25rem;
-    width:50rem;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    font-family:'Josefin Sans';
+.container {
+    height: 25rem;
+    width: 50rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Josefin Sans';
 }
-.message{
-    height:25rem;
-    width:30rem;
+
+.message {
+    height: 25rem;
+    width: 30rem;
 
 }
-.image > img{
-    height:25rem;
-    width:20rem;
-    background-size:cover;
-
+.logo img{
+    height:1.2rem;
 }
+
+.image {
+    height: 25rem;
+    width: 20rem;
+    background-image: url('./images/hero-desktop.jpg');
+    background-size: cover;
+}
+
 /* implementing gap between logo and "coming soon" */
-.gap{
-    display:flex;
-    flex-direction:column;
-    gap:4rem;
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
+
 /* we're coming soon decoration */
-.soon{
+.soon {
     font-size: xx-large;
     letter-spacing: 10px;
     text-transform: uppercase;
 }
-.soon > h1 > span{
+
+.soon>h1>span {
     color: var(--Desaturated-Red);
 }
-.soon > h1 {
+
+.soon>h1 {
     color: var(--Dark-Grayish-Red);
 }
 
 /* paragraph desing */
 
-.para{
+.para {
     color: var(--Desaturated-Red);
     font-size: 13px;
     font-family: 'Josefin Sans';
@@ -83,78 +94,164 @@ body{
     width: 24rem;
 
 }
+
 .form {
-    position:relative;
+    position: relative;
 }
-.form-control{
-    position:relative;
-    top:1rem;
+
+.form-control {
+    position: relative;
+    top: 1rem;
 }
-.form-control > #email{
-    height:3rem;
-    width:19rem;
-    border-radius:50px 0 0 50px;
+
+.form-control>#email {
+    height: 3rem;
+    width: 19rem;
+    border-radius: 50px 0 0 50px;
     padding-left: 1.5rem;
     font-family: 'Josefin Sans';
     font-size: 16px;
-    border:0.7px solid var(--Desaturated-Red);
+    border: 0.7px solid var(--Desaturated-Red);
 }
 
- .form > .submit > input[type="submit"]{
+.form>.submit>input[type="submit"] {
     height: 3rem;
     width: 5rem;
     border-radius: 25px;
-    margin-left: -2rem; 
+    margin-left: -2rem;
     background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     right: 0;
     left: 18.5rem;
     top: 1rem;
     box-shadow: 0 8px 30px 1px var(--Soft-Red);
-} 
-.form > .submit > input[type="submit"]:hover{
-    border-radius:20px;
-    height:3rem;
-    width:5.3rem;
-    background:hsl(0, 80%, 86%);
-}
-.form > .form-control > input:focus{
-    outline-color: none;
-    border: 1px solid var(--Desaturated-Red);
-    color:var(--Soft-Red);
-    font-size:20px;
-    font-weight:400;
-    font-family: 'Josefin Sans';
-}
-.form >.submit > .arrow{
-    position:absolute;
-    top:2rem;
-    left:18.5rem;
-    height:1rem;
-    width:1rem;
-    cursor:pointer;
 }
 
-.form-control > .error-icon{
+.form>.submit>input[type="submit"]:hover {
+    border-radius: 20px;
+    height: 3rem;
+    width: 5.3rem;
+    background: hsl(0, 80%, 86%);
+}
+
+.form>.form-control>input:focus {
+    outline-color: none;
+    border: 1px solid var(--Desaturated-Red);
+    color: var(--Soft-Red);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Josefin Sans';
+}
+
+.form>.submit>.arrow {
+    position: absolute;
+    top: 2rem;
+    left: 18.5rem;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+}
+
+.form-control>.error-icon {
     position: absolute;
     right: 14rem;
     top: 0.8rem;
     visibility: hidden;
 }
-.form-control.error img.error-icon{
-    visibility:visible;
+
+.form-control.error img.error-icon {
+    visibility: visible;
 }
-.form-control > p{
-    color:var(--Desaturated-Red);
-    font-size:15px;
-    visibility:hidden;
+
+.form-control>p {
+    color: var(--Desaturated-Red);
+    font-size: 15px;
+    visibility: hidden;
+    position: absolute;
+    top: 3.8rem;
+    left: 2rem;
+}
+
+.form-control.error>p {
+    visibility: visible;
+}
+
+/* mobile version responsiveness */
+
+@media screen and (max-width:375px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        position: relative;
+        height: 30rem;
+    }
+
+    .image {
+        width: 85%;
+        height: 33rem;
+        background-image: url("./images/hero-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position:relative;
+        left:1rem;
+        top:-4rem;
+    }
+
+    .logo {
+        position: absolute;
+        left: 2.8rem;
+        top: -13rem;
+
+    }
+    .logo img{
+        height:2rem;
+    }
+
+    .gap {
+        gap: 2.6rem;
+        position:relative;
+    }
+   .gap > .soon{
+    font-size: x-large;
+    letter-spacing: 5px;
     position:absolute;
-    top:3.8rem;
-    left:2rem;
-}
-.form-control.error > p{
-    visibility:visible;
+    left:10rem
+
+    }
+    .para{
+    font-size: 15px;
+    width: 20rem;
+    position: relative;
+    left: 6rem;
+    bottom: -7rem;
+    }
+    .form-control{
+        top:11rem;
+    }
+    .form-control > .error-icon{
+        right:9rem;
+    }
+    .form-control > p{
+        left:6.85rem;
+        font-size:1.23rem;
+    }
+
+    .form>.submit>input[type="submit"] {
+        width:4.5rem;
+        right: 0;
+        left: 23.5rem;
+        top: 11rem;
+    }
+
+    .form > .submit > .arrow{
+        top:12rem;
+        left:23.5rem;
+
+    }
+
+
 }

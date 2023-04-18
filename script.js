@@ -1,5 +1,11 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
+const arrow = document.querySelector('.arrow');
+
+arrow.addEventListener('click',()=>{
+    console.log("hello");
+    validate();
+})
 
 form.addEventListener('submit' , (event) => {
     event.preventDefault();
